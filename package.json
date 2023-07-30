@@ -1,9 +1,13 @@
 {
-  "name": "fast-gateway",
+  "name": "@spklai/fast-gateway",
   "version": "3.4.5",
   "description": "A Node.js API Gateway for the masses!",
   "main": "index.js",
   "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
   "scripts": {
     "test": "nyc mocha test/*.test.js",
     "format": "npx standard --fix",
@@ -12,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jkyberneees/fast-gateway.git"
+    "url": "git+https://github.com/spklai/fast-gateway.git"
   },
   "keywords": [
     "fast",
@@ -21,12 +25,12 @@
     "api",
     "gateway"
   ],
-  "author": "Rolando Santamaria Maso <kyberneees@gmail.com>",
+  "author": "SparkleAI <dev@spklai.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jkyberneees/fast-gateway/issues"
+    "url": "https://github.com/spklai/fast-gateway/issues"
   },
-  "homepage": "https://github.com/jkyberneees/fast-gateway#readme",
+  "homepage": "https://github.com/spklai/fast-gateway#readme",
   "dependencies": {
     "@polka/send-type": "^0.5.2",
     "fast-proxy-lite": "^1.1.1",
