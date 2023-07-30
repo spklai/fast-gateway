@@ -218,6 +218,9 @@ WebSockets proxying is supported since `v3.1.0`. Main considerations:
     proxyType: 'websocket';
     // https://github.com/faye/faye-websocket-node#initialization-options
     proxyConfig?: {}; 
+    // Forward request headers to the target. Default value: false
+    // Headers in proxyConfig take precedence over the forwarded headers.
+    passRequestHeaders?: boolean;
     // used as micromatch matcher pattern: https://www.npmjs.com/package/micromatch
     // prefix examples: '/graphql', '/ws-all/*', ['/rtp', '/rtp/*.flv'], '!/media/*.avi'
     prefix: string; 
